@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBookshelf Apps</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Bookshelf Apps</h1>
+  </header>
+
+  <div class="wrapper">
+    <div class="container" id="add-book">
+      <h2 class="container-header text-center">Masukkan Buku</h2>
+      <form class="form" action="#" id="form">
+        <div class="inputBox form-group form-title">
+          <input type="text" id="title" name="title" required='required'>
+          <label for="title"></label><span>Judul</span>
+        </div>
+        <div class="inputBox form-group form-title">
+          <input type="text" id="author" name="author" required='required'>
+          <label for="author"></label><span>Penulis</span>
+        </div>
+        <div class="inputBox form-group form-title">
+          <input type="text" id="date" name="date" required='required'>
+          <label for="date"></label><span>Tahun</span>
+        </div>
+        <div class="input_inline">
+          <label for="inputBookIsComplete">Selesai dibaca</label>
+          <input id="inputBookIsComplete" type="checkbox">
+        </div>
+        <input type="submit" value="Submit" name="Submit" class="btn-submit">
+      </form>
+    </div>
+    <div class="container">
+      <div class="inputBox">
+        <h2 class="container-header text-center">Cari Buku </h2>
+        <form id=" searchBook">
+          <input id="searchBookTitle" type="text" required='required'>
+          <label for="searchBookTitle"></label> <span>Cari Judul Buku</span>
+        </form>
+        <button id="searchSubmit" type="submit" class="submit ">Cari</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header"> Belum Dibaca</h2>
+      <div class="List-item" id="books">
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header"> Sudah Dibaca</h2>
+      <div class="List-item" id="complete-books">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
